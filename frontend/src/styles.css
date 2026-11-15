@@ -1,0 +1,16 @@
+:root{--bg:#0b1118;--panel:#121a24;--line:#223044;--txt:#dbe4ef;--mut:#7f91a8;--cy:#38bdf8;--crit:#f43f5e;--high:#fb923c;--med:#facc15;--low:#4ade80;--info:#7f91a8;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.45 system-ui,sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}input,select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 10px}
+.btn{background:var(--cy);color:#04121c;border:0;border-radius:6px;padding:7px 14px;font-weight:600;cursor:pointer}.btn.ghost{background:none;color:var(--txt);border:1px solid var(--line)}.btn:disabled{opacity:.5}
+:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+header.top{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--panel);flex-wrap:wrap}
+main{padding:20px;display:flex;flex-direction:column;gap:16px;max-width:1300px;margin:auto}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}.card b{font-size:24px;display:block}.card span{color:var(--mut)}
+.banner{background:#3b2f08;border:1px solid var(--med);color:var(--med);padding:8px 12px;border-radius:8px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--mut);font-weight:500}
+.wrap{overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.sev{font-weight:700}.critical{color:var(--crit)}.high{color:var(--high)}.medium{color:var(--med)}.low{color:var(--low)}.informational{color:var(--info)}
+.auth{max-width:340px;margin:12vh auto;display:flex;flex-direction:column;gap:10px;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.err{color:var(--crit)}small{color:var(--mut)}
